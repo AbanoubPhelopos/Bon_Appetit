@@ -44,10 +44,7 @@ public class AdminActivity extends AppCompatActivity {
             } else if (itemId == R.id.AdminMonitorOrder) {
                 replaceFragment(new AdminMonitorFragment(), index);
                 return true;
-            } else if (itemId == R.id.AdminStatistics) {
-                replaceFragment(new AdminStatFragment(), index);
-                return true;
-            }else if (itemId == R.id.AdminProfile) {
+            } else if (itemId == R.id.AdminProfile) {
                 if(LoginHandler.isLoggedIn() ){
 
                     replaceFragment(new AdminProfileFragment(), index);

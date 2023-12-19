@@ -40,13 +40,13 @@
 
         <EditText
             android:id="@+id/editCity"
-            android:layout_width="189dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editTextUsername"
-            android:layout_marginStart="-382dp"
-            android:layout_marginTop="10dp"
+            android:layout_alignStart="@+id/editTextUsername"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="0dp"
             android:layout_marginEnd="16dp"
-            android:layout_toEndOf="@+id/editTextUsername"
             android:background="@drawable/edittext_background"
             android:hint="City"
             android:inputType="text"
@@ -58,8 +58,8 @@
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editTextUsername"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
             android:layout_toEndOf="@+id/editCity"
             android:background="@drawable/edittext_background"
             android:hint="Street"
@@ -131,30 +131,5 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/AdminSignUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/buttonSignUp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="143dp"
-            android:clickable="true"
-            android:text="Admin"
-            android:textColor="@color/blue"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textViewAdminSignUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/buttonSignUp"
-            android:layout_marginTop="55dp"
-            android:layout_marginEnd="0dp"
-            android:layout_toStartOf="@+id/AdminSignUp"
-            android:text="You are ? "
-            android:textColor="@android:color/white" />
     </RelativeLayout>
 </RelativeLayout>

@@ -94,12 +94,14 @@
 
     <Button
         android:id="@+id/BUY"
-        android:layout_width="127dp"
+        android:layout_width="234dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/add"
-        android:layout_marginTop="135dp"
-        android:layout_marginEnd="26dp"
-        android:layout_toStartOf="@+id/add_to_cart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="87dp"
         android:backgroundTint="@color/dark_orange"
         android:text="BUY"
         android:textColor="@color/white"
@@ -125,19 +127,6 @@
         android:backgroundTint="@color/dark_orange"
         android:onClick="add"
         android:text="ADD"
-        android:textColor="@color/white"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/add_to_cart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/add"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="135dp"
-        android:layout_marginEnd="35dp"
-        android:backgroundTint="@color/dark_orange"
-        android:text="Add to Cart"
         android:textColor="@color/white"
         android:textSize="30sp" />
 

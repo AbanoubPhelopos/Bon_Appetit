@@ -6,11 +6,6 @@
         android:icon="@drawable/baseline_restaurant_menu_24"/>
 
     <item
-        android:id="@+id/ResCart"
-        android:title="Cart"
-        android:icon="@drawable/baseline_add_shopping_cart_24"/>
-
-    <item
         android:id="@+id/ResSearch"
         android:title="Search"
         android:icon="@drawable/baseline_search_24"/>

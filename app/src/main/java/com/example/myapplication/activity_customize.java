@@ -22,7 +22,7 @@ public class activity_customize extends AppCompatActivity {
 
 
     TextView name, description, count;
-    Button increment, decrement, addSpicy, addExtra, addToCart,Buy;
+    Button increment, decrement, addSpicy, addExtra,Buy;
     int numberOfDishes = 0;
     Bundle extras;
 
@@ -103,14 +103,7 @@ public class activity_customize extends AppCompatActivity {
                 BuyButton(index,userId);
             }
         });
-        addToCart = findViewById(R.id.add_to_cart);
-        addToCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                addToCart.setBackgroundColor(Color.RED);
 
-            }
-        });
     }
 
     private void updateCount() {

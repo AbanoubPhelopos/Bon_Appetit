@@ -64,9 +64,6 @@ public class UserActivity extends AppCompatActivity {
             if (itemId == R.id.ResMenu) {
                 replaceFragment(new MenuFragment(), userId);
                 return true;
-            } else if (itemId == R.id.ResCart) {
-                replaceFragment(new CartFragment(), userId);
-                return true;
             } else if (itemId == R.id.ResSearch) {
                 replaceFragment(new SearchFragment(), userId);
                 return true;

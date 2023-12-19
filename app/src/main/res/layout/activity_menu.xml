@@ -42,23 +42,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/to_filter"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="330dp"
         android:isIndicator="true"
         android:numStars="5"
         android:rating="0"
         android:progressTint="@color/white"
-        />
+        android:layout_marginBottom="8dp"
+    />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/MenuView"
         android:layout_width="match_parent"
         android:layout_height="295dp"
-        android:layout_below="@id/to_filter"
+        android:layout_below="@id/ratingBar"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="4dp" />
 
 </RelativeLayout>
