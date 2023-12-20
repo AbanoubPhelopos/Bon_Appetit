@@ -173,10 +173,14 @@ public class activity_menu extends AppCompatActivity implements RecyclerViewInte
     public void onClick(int pos) {
         if (LoginHandler.isLoggedIn()) {
             Intent intent = new Intent(activity_menu.this, activity_customize.class);
-            ArrayList<Dishes> allDishes = database.dishes;
-
-            intent.putExtra("name", allDishes.get(pos).getName());
-            intent.putExtra("description", allDishes.get(pos).getDescription());
+            ArrayList<Dishes> f = filteredDishes;
+            for (Dishes d: database.dishes){
+                if (f.get(pos).getRestaurantName().equals(d.getRestaurantName()) && f.get(pos).getName().equals(d.getName())) {
+                    pos = database.dishes.indexOf(d);
+                }
+            }
+            intent.putExtra("name", database.dishes.get(pos).getName());
+            intent.putExtra("description", database.dishes.get(pos).getDescription());
             intent.putExtra("index", pos);
             intent.putExtra("UserId", userId);
 

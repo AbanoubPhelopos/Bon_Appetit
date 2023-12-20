@@ -71,8 +71,10 @@ public class database {
     }
 
     public static admin adminSearch(String email) {
-        admin new_admin = new admin("admin@gmail.com", "admin", "123", "arabiata");
+        admin new_admin = new admin("arabiata@gmail.com", "admin", "123", "arabiata");
+        admin newadmin = new admin("ElTahrir@gmail.com", "admin", "123", "EL Tahrir");
         adminList.add(new_admin);
+        adminList.add(newadmin);
         for (admin a : adminList) {
             if (a.getEmail().equals(email)) {
                 return a;

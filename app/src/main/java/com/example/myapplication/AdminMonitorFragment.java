@@ -72,13 +72,14 @@ public class AdminMonitorFragment extends Fragment  {
     public ArrayList<user> getUsers(){
         for(Payment pay: database.payments){
             for (user users: database.userList){
-                if (pay.getUserId() == users.getId()){
+                if (pay.getUserId() == users.getId() && !orderedUsers.contains(users)){
                     orderedUsers.add(users);
                 }
             }
         }
         return orderedUsers;
     }
+
 
 }
 

@@ -16,10 +16,11 @@ import com.example.myapplication.Database.database;
 import java.util.ArrayList;
 
 public class activity_remove_dish extends AppCompatActivity implements RecyclerViewInterface {
-    ArrayList<admin> admins = database.adminList;
+
     ArrayList<Dishes> dishes = database.dishes;
     ArrayList <Dishes> resdishes = null;
     RemoveAdapter adapter;
+    int index;
 
 
     @Override
@@ -28,11 +29,11 @@ public class activity_remove_dish extends AppCompatActivity implements RecyclerV
         setContentView(R.layout.remove_dish);
 
         // Retrieve the index from the intent
-        int index = getIntent().getIntExtra("index", -1);
+        index = getIntent().getIntExtra("index", -1);
 
         RecyclerView recyclerView= findViewById(R.id.removeRyclerview);
-        admin ad = admins.get(index);
-        String resname = ad.getResturant();
+
+        String resname = database.adminList.get(index).getResturant();
 
 
         resdishes = new ArrayList<>();

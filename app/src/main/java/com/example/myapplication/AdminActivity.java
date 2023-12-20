@@ -30,7 +30,7 @@ public class AdminActivity extends AppCompatActivity {
         binding = ActivityAdminBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         //setContentView(R.layout.activity_admin);
-        int index = getIntent().getIntExtra("index", -1);
+        index = getIntent().getIntExtra("index", -1);
 
         replaceFragment(new MenuFragment(), index);
         binding.AdminBottomNavigationView.setBackground(null);

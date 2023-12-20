@@ -62,11 +62,11 @@ public class login_page extends AppCompatActivity implements View.OnClickListene
 //                to know that an admin logged in to system
                admin tmpAdmin = database.adminSearch(email);
                 LoginHandler.LOGIN(tmpAdmin);
-                int index= -1;
+                int index = -1;
                 for( admin a: database.adminList){
 
                     if (email.equals(a.getEmail())){
-                        index= database.adminList.indexOf(a);
+                        index = database.adminList.indexOf(a);
                     }
                 }
                 adminWrite.addLoggedInAdmin(this,email);

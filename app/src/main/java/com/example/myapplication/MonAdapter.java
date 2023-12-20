@@ -42,19 +42,33 @@ public class MonAdapter extends RecyclerView.Adapter<MonAdapter.MonViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MonAdapter.MonViewHolder holder, int position) {
-        for (Payment payment: payments){
-          for (user u: users){
-             for (Dishes d: dishes)
-                if (u.getId() == payment.getUserId() && d.getId() == payment.getDishId() && d.getRestaurantName().equals(database.adminList.get(index).getResturant())){
-                  holder.Name.setText(u.getUserName());
-                     holder.Dish.setText(d.getName());
-                     holder.Street.setText(u.getStreet());
-                     holder.City.setText(u.getCity());
-                     break;
+        Payment payment = payments.get(position);
+
+        user currentUser = null;
+        Dishes currentDish = null;
+
+        for (user u : users) {
+            for (Dishes d : dishes) {
+                if (u.getId() == payment.getUserId() && d.getId() == payment.getDishId() &&
+                        d.getRestaurantName().equals(database.adminList.get(index).getResturant())) {
+                    currentUser = u;
+                    currentDish = d;
+                    break;
                 }
-          }
+            }
+            if (currentUser != null && currentDish != null) {
+                break;
+            }
+        }
+
+        if (currentUser != null && currentDish != null) {
+            holder.Name.setText(currentUser.getUserName());
+            holder.Dish.setText(currentDish.getName());
+            holder.Street.setText(currentUser.getStreet());
+            holder.City.setText(currentUser.getCity());
         }
     }
+
 
     @Override
     public int getItemCount() {
