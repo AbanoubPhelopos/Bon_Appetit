@@ -17,6 +17,5 @@ Bon Appétit empowers users to provide feedback on their dining experience. The 
 ## 🔐 Admin Dashboard
 For restaurant owners, Bon Appétit includes an admin dashboard to manage the menu efficiently. Owners can add, edit, or remove dishes, and monitor orders, optimizing business operations and ensuring customer satisfaction.
 
-## Linkedin Post for this Project <a href="https://www.linkedin.com/posts/abanoub-saweris_oop-androidapp-foodorderingsystem-activity-7143914579251675136-qy4i?utm_source=share&utm_medium=member_desktop
-">Link</a>
+<a href="https://www.linkedin.com/posts/abanoub-saweris_oop-androidapp-foodorderingsystem-activity-7143914579251675136-qy4i?utm_source=share&utm_medium=member_desktop" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="AbanoubSAweris" height="30" width="40" /></a>
 
